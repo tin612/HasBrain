@@ -4,15 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.tin612.hasbrain.MainActivity">
-
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="175dp"
-            android:padding="0dip"
             >
             <ImageView
                 android:layout_width="fill_parent"
@@ -71,120 +68,131 @@
                 android:id="@+id/caption2"
                 android:text="@string/movienameen"
                 />
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/caption2"
+               android:layout_marginTop="30dp"
+               android:id="@+id/layout1"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               >
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/bg_imdb"
+                                android:id="@+id/reviewImg"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/review"
+                                android:id="@+id/reviewLabel"
+                                android:layout_toRightOf="@id/reviewImg"
+                                android:textSize="12sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/reviewScore"
+                                android:layout_below="@id/reviewLabel"
+                                android:layout_toRightOf="@id/reviewImg"
+                                android:text="8.0"
+                                android:textSize="20sp"
+                                />
+                        </RelativeLayout>
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       >
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           >
+                           <ImageView
+                               android:layout_width="40dp"
+                               android:layout_height="40dp"
+                               android:src="@drawable/bg_p_date"
+                               android:id="@+id/dateImg"
+                               />
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="@string/date"
+                               android:id="@+id/dateLabel"
+                               android:textSize="12sp"
+                               android:layout_toRightOf="@id/dateImg"
+                               />
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:id="@+id/dateValue"
+                               android:layout_below="@id/dateLabel"
+                               android:text="27/05"
+                               android:textSize="20sp"
+                               android:layout_toRightOf="@id/dateImg"
+                               />
+                       </RelativeLayout>
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       >
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           >
+                           <ImageView
+                               android:layout_width="40dp"
+                               android:layout_height="40dp"
+                               android:src="@drawable/bg_duration"
+                               android:id="@+id/timeImg"
+                               />
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="@string/time"
+                               android:id="@+id/timeLabel"
+                               android:layout_toRightOf="@id/timeImg"
+                               />
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:id="@+id/timeValue"
+                               android:layout_below="@id/timeLabel"
+                               android:layout_toRightOf="@id/timeImg"
+                               android:text="144p"
+                               android:textSize="20sp"
+                               />
+                       </RelativeLayout>
+               </LinearLayout>
+               </LinearLayout>
+           </RelativeLayout>
             <RelativeLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/calendar"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@id/caption2"
-                android:layout_marginTop="30dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                >
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/pDateImg"
-                    android:src="@drawable/bg_p_date"
-                    android:contentDescription="@string/date"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/pDateImg"
-                    android:id="@+id/pDateLabel"
-                    android:text="@string/date"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="12sp"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/pDateValue"
-                    android:text="27/05"
-                    android:layout_below="@id/pDateLabel"
-                    android:layout_toRightOf="@id/pDateImg"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="20sp"
-                    />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_below="@id/caption2"
-                android:layout_marginTop="30dp"
-                android:paddingLeft="10dp"
-                >
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/imdbImg"
-                    android:src="@drawable/bg_imdb"
-                    android:contentDescription="@string/date"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/imdbImg"
-                    android:id="@+id/imdbLabel"
-                    android:text="@string/review"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="12sp"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imdbValue"
-                    android:text="8.0"
-                    android:layout_below="@id/imdbLabel"
-                    android:layout_toRightOf="@id/imdbImg"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="20sp"
-                    />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_below="@id/caption2"
-                android:layout_marginTop="30dp"
-                android:paddingRight="10dp"
-                >
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/durationImg"
-                    android:src="@drawable/bg_duration"
-                    android:contentDescription="@string/date"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/durationImg"
-                    android:id="@+id/durationLabel"
-                    android:text="@string/time"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="12sp"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/durationValue"
-                    android:text="140p"
-                    android:layout_below="@id/durationLabel"
-                    android:layout_toRightOf="@id/durationImg"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="20sp"
-                    />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/calendar"
+                android:layout_below="@id/layout1"
                 android:background="@drawable/radius_darker"
                 android:layout_marginTop="40dp"
                 android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:padding="10dp"
                 >
                 <RelativeLayout
@@ -192,16 +200,15 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/radius"
                     android:id="@+id/genreLayout"
-
                     >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/genre"
-                    android:id="@+id/genreLabel"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginLeft="5dp"
-                    />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/genre"
+                        android:id="@+id/genreLabel"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -230,5 +237,7 @@
         android:src="@drawable/ic_play_trailer"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
         />
 </RelativeLayout>
