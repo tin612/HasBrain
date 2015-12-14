@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Has Brain</string>
+    <string name="movienamevn">Dị Nhân : Ngày cũ của tương lai</string>
+    <string name="movienameen">X-Men : Day of Future Past</string>
+    <string name="review">ĐÁNH GIÁ</string>
+    <string name="date">KHỞI CHIẾU</string>
+    <string name="time">THỜI LƯỢNG</string>
+    <string name="genre">THỂ LOẠI:</string>
+</resources>
